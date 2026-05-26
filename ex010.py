@@ -3,8 +3,6 @@ while True:
     if n < 0:
         print('programa encerrado. Volte sempre')
         break
-    c = 1
-    while c <= 10:
+    for c in range (1, 11):
         print(f'{n} x {c} = {n*c}')
-        c += 1
     print('---' *20)

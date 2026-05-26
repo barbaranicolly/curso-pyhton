@@ -1,9 +1,8 @@
-s = n = 0
-c = 1
+s = cont = 0
 while True:
-    n = int(input('digite um valor: 999 faz parar: '))
+    n = int(input('digite um valor (999 faz parar): '))
     if n == 999:
         break
     s += n
-c += 1
-print(f'a soma dos {c} valores digitados, foi de {s}')
+    cont += 1
+print(f'a soma dos {cont} valores digitados, foi de {s}')
