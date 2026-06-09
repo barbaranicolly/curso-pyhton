@@ -1,12 +1,13 @@
-valores = []
-valores.insert(0, int(input('digite um valor: ')))
-print(f'adicionando valor...')
-valores.insert(1, int(input('digite outro valor: ')))
-print(f'adicionando valor...')
-valores.insert(2, int(input('digite um valor: ')))
-print(f'adicionando valor...')
-valores.insert(3, int(input('digite um valor: ')))
-print(f'adicionando valor...')
-valores.insert(4, int(input('digite outro valor: ')))
-print(f'adicionando valor...')
-print(f'foram adicionados a lista {valores}')
+lista = []
+for c in range(0, 5):
+    n = int(input('digite o valor: '))
+    if c == 0 or n > lista[-1]:
+        lista.append(n)
+    else:
+        pos = 0
+        while pos < len(lista):
+            if n <= lista[pos]:
+                lista.insert(pos, n)
+                break
+            pos += 1
+print(f'os valores digitados em lista foram {lista}')

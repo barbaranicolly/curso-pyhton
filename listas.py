@@ -1,6 +1,6 @@
 valores = []
-for cont in range(0, 5):
-   valores.append(int(input(f'digite um valor para a posiçao {cont}: ')))
+for c in range(0, 5):
+   valores.append(int(input(f'digite um valor para a posiçao {c}: ')))
 print(f'voce digitou os valores {valores}')
 maior = max(valores)
 menor = min(valores)
@@ -11,4 +11,4 @@ for i, v in enumerate(valores):
 print(f'o menor valor digitado foi {menor} nas posiçoes: ', end ='')
 for i, v in enumerate(valores):
     if v == menor:
-        print(i, end='')
+        print(i, end= '...')
