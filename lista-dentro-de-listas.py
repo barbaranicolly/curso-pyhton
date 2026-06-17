@@ -20,12 +20,12 @@ while True:
         break
 
 print(f'foram cadastradas {len(prin)} pessoas')
-print(f'o maior peso foi de {maior}, peso de ', end='')
+print(f'o maior peso foi de {maior}kg, peso de ', end='')
 for p in prin:
     if p[1] == maior:
-     print(f'{p[0]}', end='')
+     print(f'[{p[0]}] ', end='')
 print()
-print(f'o menor peso foi de {menor}, foi de ', end='')
+print(f'o menor peso foi de {menor}kg, foi de ', end='')
 for p in prin:
     if p[1] == menor:
-        print(f'{p[0]}', end='')
+        print(f'[{p[0]}] ', end='')
